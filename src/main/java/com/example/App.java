@@ -27,7 +27,7 @@ public class App
         System.out.println("Supplier created! " + completeSupplier.getId() + " " + completeSupplier.getName());
 
 
-        for(int ii = 0; ii < 137; ii++) {
+        for(int ii = 0; ii < 27; ii++) {
             transactionBuilder.post(Entity.entity(new Transaction(completeSupplier, args[1] +" ii"),
                             MediaType.APPLICATION_JSON));
         }
